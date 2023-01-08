@@ -54,11 +54,11 @@ const SignUp = () => {
             <form onSubmit={handleSubmit} >
 
                 <FormInput label="Display Name" required type="text" onChange={handleEvent} name="displayName" value={displayName} />
-                <FormInput label="Emai  l" required type="email" onChange={handleEvent} name="email" value={email} />
+                <FormInput label="Email" required type="email" onChange={handleEvent} name="email" value={email} />
                 <FormInput label="Password" required type="password" onChange={handleEvent} name="password" value={password} />
                 <FormInput label="Confirm Password" required type="password" onChange={handleEvent} name="confirmPassword" value={confirmPassword} />
 
-                <Button type="submit">Sign Up</Button>
+                <Button type="submit">Sign</Button>
             </form>
         </div>
     )
