@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore'; //getDoc is getdoc data, to get doc we use just doc instance
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth';
 
 
 const firebaseConfig = {
@@ -62,4 +62,12 @@ export const createAuthUserWithEmailAndPassword = async (email, password) => {
 export const signInAuthUserWithEmailAndPassword = async (email, password) => {
     if (!email && !password) return;
     return await signInWithEmailAndPassword(auth, email, password);
+}
+
+export const signOutUser = async () => {
+    return await signOut(auth);
+}
+
+export const onAuthStateChangedListener = (callback) => {
+    return onAuthStateChanged(auth, callback);
 }
