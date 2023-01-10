@@ -1,12 +1,12 @@
 .category-container {
-  min-width: 32%;
-  height: 240px;
+  min-width: 30%;
+  height: 300px;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin: 0 7.5px 15px;
+  margin: 0 5px 5px;
   overflow: hidden;
 
   &:hover {
@@ -35,8 +35,8 @@
   }
 
   .background-image {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     background-size: cover;
     background-position: center;
   }

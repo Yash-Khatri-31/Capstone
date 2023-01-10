@@ -2,12 +2,12 @@ const Categories = [
     {
         "id": 1,
         "title": "Hats",
-        "imageUrl": "https://www.freepnglogos.com/uploads/pirate-png/pirate-hat-cliparts-download-clip-art-clip-art-clipart-library-23.png"
+        "imageUrl": "https://media.gq.com/photos/5a04f9a398002d2e253679f5/master/pass/fall-hats-gq-style-0816-01-1.jpg"
     },
     {
         "id": 2,
         "title": "Jackets",
-        "imageUrl": "https://www.freepnglogos.com/uploads/jacket-png/red-suede-jacket-club-penguin-wiki-fandom-powered-wikia-31.png"
+        "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/down-jackets-2021-lead-1632405194.jpg"
     },
     {
         "id": 3,
@@ -17,12 +17,12 @@ const Categories = [
     {
         "id": 4,
         "title": "Women",
-        "imageUrl": "https://png.pngitem.com/pimgs/s/498-4985935_anime-girl-with-brown-hair-and-glasses-hd.png"
+        "imageUrl": "https://media.istockphoto.com/id/1208148708/photo/polka-dot-summer-brown-dress-suede-wedge-sandals-eco-straw-tote-bag-cosmetics-on-a-light.jpg?s=612x612&w=0&k=20&c=9Y135GYKHLlPotGIfynBbMPhXNbYeuDuFzreL_nfDE8="
     },
     {
         "id": 5,
         "title": "Men",
-        "imageUrl": "https://i.pinimg.com/736x/71/92/39/719239b9db26294c0177d8b43c8bbc43.jpg"
+        "imageUrl": "https://media.istockphoto.com/id/504742864/photo/stylish-business-clothing-for-businessman.jpg?s=612x612&w=0&k=20&c=AsGrhEMNkmpwqaJPBSACPthMuBsmsDIecRkdFXKSnl0="
     }
 ]
 

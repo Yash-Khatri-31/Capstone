@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Brown Brim",
+    "imageUrl": "https://i.pinimg.com/originals/c1/9e/ec/c19eecc6143d85cde4eec572ff6a437e.jpg",
+    "price": 25
+  },
+  {
+    "id": 2,
+    "name": "Blue Beanie",
+    "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0935f32a-f9b9-4e6f-9f16-8172c766108a/golden-state-warriors-nba-beanie-2fghzw.png",
+    "price": 18
+  },
+  {
+    "id": 5,
+    "name": "Green Beanie",
+    "imageUrl": "https://m.media-amazon.com/images/I/81EAQK85p0L._AC_UF1000,1000_QL80_.jpg",
+    "price": 18
+  },
+  {
+    "id": 7,
+    "name": "Red Beanie",
+    "imageUrl": "https://res.cloudinary.com/trendhim/image/upload/f_auto,c_pad,q_auto,w_1000,h_1000/media/catalog/product/p/j/pjouh7yr.jpg",
+    "price": 18
+  },
+  {
+    "id": 8,
+    "name": "Wolf Cap",
+    "imageUrl": "https://m.media-amazon.com/images/I/61SM5EjP7RL._AC_SY580_.jpg",
+    "price": 14
+  },
+  {
+    "id": 9,
+    "name": "Blue Snapback",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_681841-MCO31060485162_062019-O.jpg",
+    "price": 16
+  }
+]
