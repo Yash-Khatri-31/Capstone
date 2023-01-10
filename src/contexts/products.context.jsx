@@ -7,7 +7,7 @@ export const ProductsContext = createContext({
 
 export const ProductsProvider = ({ children }) => {
 
-    const [products, setProducts] = useState(SHOP_DATA);
+    const [products, setProducts] = useState(SHOP_DATA); // we will use setProducts when we want to change the data or get it from a database and not local storage
     const value = { products }; // idk how adding this line fixed the issue but okai
 
     return (
