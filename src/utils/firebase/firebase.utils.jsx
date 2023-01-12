@@ -34,10 +34,10 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
     objectsToAdd.map((object) => {
         const docRef = doc(collectionRef, object.title.toLowerCase());
         batch.set(docRef, object);
+        return docRef;
     })
 
     await batch.commit();
-    console.log("done")
 
 };
 
