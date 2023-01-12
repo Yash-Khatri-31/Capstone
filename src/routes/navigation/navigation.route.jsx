@@ -1,12 +1,12 @@
-import './navigation.styles.scss';
 import { useContext } from 'react';
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { UserContext } from '../../contexts/user.context';
 import { CartContext } from '../../contexts/cart.context';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 import { ReactComponent as CrownLogo } from '../../assets/crown.svg';
 import CartIcon from '../../components/cart-icon/cart-icon.component';
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
+import { NavigationContainer, LogoContainer, NavLinksContainer, NavLink } from '../navigation/navigation.styles';
 
 const Navigation = () => {
 
@@ -15,23 +15,23 @@ const Navigation = () => {
 
     return (
         <>
-            <div className="navigation">
-                <Link className="logo-container" to="/">
+            <NavigationContainer>
+                <LogoContainer to="/">
                     <CrownLogo />
-                </Link>
-                <div className="nav-links-container">
-                    <Link className="nav-link" to="/shop">SHOP</Link>
+                </LogoContainer>
+                <NavLinksContainer>
+                    <NavLink to="/shop">SHOP</NavLink>
                     {
                         currentUser ? (
-                            <span className='nav-link' onClick={signOutUser}>SIGN-OUT</span>
+                            <NavLink as="span" onClick={signOutUser}>SIGN-OUT</NavLink>
                         ) : (
-                            <Link className="nav-link" to="/authentication">SIGN-IN</Link>
+                            <NavLink to="/authentication">SIGN-IN</NavLink>
                         )
                     }
                     <CartIcon />
-                </div>
+                </NavLinksContainer>
                 {toggle && <CartDropdown />}
-            </div>
+            </NavigationContainer>
             <Outlet />
         </>
     )
