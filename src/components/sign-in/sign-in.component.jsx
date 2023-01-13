@@ -54,7 +54,7 @@ const SignIn = () => {
             <span>Sign In</span>
             <form onSubmit={handleSubmit} >
 
-                <FormInput label="Emai  l" required type="email" onChange={handleEvent} name="email" value={email} />
+                <FormInput label="Email" required type="email" onChange={handleEvent} name="email" value={email} />
                 <FormInput label="Password" required type="password" onChange={handleEvent} name="password" value={password} />
 
                 <div className='buttons-container'>
