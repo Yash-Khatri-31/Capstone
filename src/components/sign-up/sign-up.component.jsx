@@ -58,7 +58,7 @@ const SignUp = () => {
                 <FormInput label="Password" required type="password" onChange={handleEvent} name="password" value={password} />
                 <FormInput label="Confirm Password" required type="password" onChange={handleEvent} name="confirmPassword" value={confirmPassword} />
 
-                <Button type="submit">Sign</Button>
+                <Button type="submit">Sign UP</Button>
             </form>
         </div>
     )
