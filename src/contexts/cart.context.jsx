@@ -1,5 +1,5 @@
-import { useReducer } from "react";
-import { createContext } from "react";
+import { useReducer, createContext } from "react";
+import { createAction } from "../reducer.utils";
 
 const deleteCartItem = (cartItems, product) => {
     return cartItems.filter((cartItem) => cartItem.id !== product.id)
@@ -72,7 +72,7 @@ export const CartProvider = ({ children }) => {
         const newCartCount = newCartItems.reduce((total, cartItem) => total + cartItem.quantity, 0);
         const newCartTotal = newCartItems.reduce((total, cartItem) => total + cartItem.quantity * cartItem.price, 0);
 
-        dispatch({ type: 'SET_CART_ITEMS', payload: { cartItems: newCartItems, cartCount: newCartCount, cartTotal: newCartTotal } })
+        dispatch(createAction(CART_ACTION_TYPES.SET_CART_ITEMS, { cartItems: newCartItems, cartCount: newCartCount, cartTotal: newCartTotal }));
 
     }
 
@@ -95,7 +95,7 @@ export const CartProvider = ({ children }) => {
     }
 
     const setToggle = (bool) => {
-        dispatch({ type: 'SET_TOOGLE', payload: bool })
+        dispatch(createAction(CART_ACTION_TYPES.SET_TOGGLE, bool));
     }
 
     const value = { toggle, setToggle, cartItems, addItemToCart, cartCount, removeItemFromCart, deleteItemFromCart, cartTotal };
